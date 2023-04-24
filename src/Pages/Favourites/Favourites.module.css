@@ -26,4 +26,6 @@ body {
     width: 50%;
     cursor: pointer;
   }
-  
+  @media screen {
+    
+  }
