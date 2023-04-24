@@ -1,7 +1,8 @@
 import React from "react";
-import FavouriteCaseOne from "../../Components/Favourite Case One/FavouriteCaseOne";
-import FavouriteCaseTwo from "../../Components/Favourite Case Two/FavouriteCaseTwo";
+
 import styles from "./Favourites.module.css";
+import FavouriteCaseOne from "../../Components/Favorite Case One/FavouriteCaseOne";
+import FavouriteCaseTwo from "../../Components/Favourite Case Two/FavouriteCaseTwo";
 
 function Favourites() {
   const storedFavorites = JSON.parse(localStorage.getItem("favorites")) || [];
@@ -9,9 +10,9 @@ function Favourites() {
   return (
     <div>
       {storedFavorites.length === 0 ? (
-        <FavouriteCaseOne />
+     <FavouriteCaseOne/>
       ) : (
-        <FavouriteCaseTwo />
+       <FavouriteCaseTwo/>
       )}
     </div>
   );

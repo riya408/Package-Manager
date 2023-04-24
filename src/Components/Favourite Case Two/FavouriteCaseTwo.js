@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FavouriteCaseOne from "../Favourite Case One/FavouriteCaseOne";
+import FavouriteCaseOne from "../Favorite Case One/FavouriteCaseOne";
 import styles from "./FavouriteCaseTwo.module.css";
 import { Modal, Button } from "react-bootstrap";
 import Swal from "sweetalert2";
@@ -59,7 +59,7 @@ function FavouriteCaseTwo() {
   }
 
   if (favorites.length === 0) {
-    return <FavouriteCaseOne />;
+    return <FavouriteCaseOne/>;
   }
 
   return (
